@@ -1,0 +1,365 @@
+:root {
+    --color-primario: #003366;
+    --color-secundario: #FFC107;
+    --color-texto: #333333;
+    --color-fondo: #F9F9F9;
+    --color-blanco: #FFFFFF;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header-principal {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navegacion a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: var(--color-secundario);
+}
+
+.btn-login {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+
+
+.seccion {
+    padding: 60px 0;
+}
+
+.fondo-gris {
+    background-color: #E9ECEF;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-secundario);
+    margin: 10px auto 0;
+}
+
+
+
+.hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)),
+        url('https://images.unsplash.com/photo-1565514020179-026b92b2d0b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primario {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: #e0a800;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--color-blanco);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid var(--color-blanco);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+}
+
+
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icono-card {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--color-primario);
+}
+
+
+
+.contenido-nosotros {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.texto-nosotros {
+    flex: 1;
+}
+
+.texto-nosotros h3 {
+    color: var(--color-primario);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.imagen-nosotros {
+    flex: 1;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+
+
+.grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.info-contacto p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.info-contacto i {
+    color: var(--color-primario);
+    width: 25px;
+    margin-right: 10px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+}
+
+
+
+
+.footer-principal {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 40px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-grid h4 {
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+}
+
+.footer-grid ul {
+    list-style: none;
+}
+
+.footer-grid ul li {
+    margin-bottom: 10px;
+}
+
+.footer-grid a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-grid a:hover {
+    color: var(--color-secundario);
+}
+
+.redes-sociales a {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: var(--color-secundario);
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .contenido-nosotros {
+        flex-direction: column;
+    }
+
+    .grid-contacto {
+        grid-template-columns: 1fr;
+    }
+}
