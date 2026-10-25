@@ -25,3 +25,4 @@ La API respondió en 4.97ms (100x más rápido que el umbral). El 100% de los ch
 ### Evidencia:
 
 [Resultados k6](<Captura de pantalla 2026-10-25 155148.png>)
+![Vista de la página](<Captura de pantalla 2026-10-25 150231.png>)
