@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTurismo RD - Menú Dinámico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌿 EcoTurismo RD</h1>
+        <nav id="dynamic-menu" class="menu-container">Cargando menú...</nav>
+    </header>
+
+    <main>
+        <section id="content">
+            <h2>Bienvenido a la plataforma de turismo sostenible</h2>
+            <p>Selecciona una opción del menú para explorar.</p>
+        </section>
+
+        <section class="admin-panel">
+            <h3>➕ Agregar Nueva Opción al Menú</h3>
+            <form id="add-menu-form">
+                <input type="number" id="new-id" placeholder="ID único (ej. 4)" required>
+                <input type="text" id="new-nombre" placeholder="Nombre (ej. 'Galería')" required>
+                <input type="text" id="new-enlace" placeholder="Enlace (ej. '#galeria' o 'https://...')" required>
+                <input type="text" id="new-icono" placeholder="Icono (ej. '📷')">
+                <select id="new-parent">
+                    <option value="">-- Menú Principal --</option>
+                </select>
+                <button type="submit">Agregar al Menú</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

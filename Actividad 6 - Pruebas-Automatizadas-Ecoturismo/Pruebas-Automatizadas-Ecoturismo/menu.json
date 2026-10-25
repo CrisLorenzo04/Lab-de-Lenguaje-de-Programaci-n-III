@@ -1,0 +1,40 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "nombre": "Inicio",
+      "enlace": "#inicio",
+      "icono": "🏠"
+    },
+    {
+      "id": 2,
+      "nombre": "Destinos RD",
+      "enlace": "#destinos",
+      "icono": "🌴",
+      "submenus": [
+        {
+          "id": 21,
+          "nombre": "Samaná",
+          "enlace": "#samana"
+        },
+        {
+          "id": 22,
+          "nombre": "Pico Duarte",
+          "enlace": "#pico-duarte"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Contacto",
+      "enlace": "#contacto",
+      "icono": "✉️"
+    },
+    {
+      "id": 99,
+      "nombre": "Playwright Test",
+      "enlace": "#test",
+      "icono": "🤖"
+    }
+  ]
+}
